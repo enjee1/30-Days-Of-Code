@@ -15,10 +15,14 @@ import java.io.*;
 
 public class Day10BinaryNumbers {
     public static void main(String[] args) throws IOException {
-        BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
+        /*BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
 
-        int n = Integer.parseInt(bufferedReader.readLine().trim());
+        int n = Integer.parseInt(bufferedReader.readLine().trim());*/
 
-        bufferedReader.close();
+        System.out.println(Integer.toBinaryString(5));
+        System.out.println(Integer.toBinaryString(13));
+
+//        bufferedReader.close();
+
     }
 }
