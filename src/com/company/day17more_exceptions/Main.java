@@ -1,9 +1,8 @@
-package com.company;
+package com.company.day17more_exceptions;
 
 import java.util.Scanner;
 
-class Day17MoreExceptions {
-
+class Main {
     public static void main(String[] args) {
 
         Scanner in = new Scanner(System.in);
@@ -23,17 +22,5 @@ class Day17MoreExceptions {
         }
         in.close();
     }
-
 }
 
-class Calculator {
-    public int power(int n, int p) throws Exception {
-
-        if (n < 0 || p < 0) {
-            throw new Exception("n and p should be non-negative");
-        } else {
-            return (int) Math.pow(n, p);
-        }
-
-    }
-}

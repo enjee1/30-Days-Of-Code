@@ -12,7 +12,7 @@ class Difference {
     public int maximumDifference;
 
     Difference(int[] numbers) {
-        this.elements = numbers;
+        elements = numbers;
     }
 
     public void computeDifference() {
