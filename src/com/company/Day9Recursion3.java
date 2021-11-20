@@ -1,38 +1,23 @@
 package com.company;
+
 import java.io.*;
-import java.math.*;
-import java.security.*;
-import java.text.*;
-import java.util.*;
-import java.util.concurrent.*;
-import java.util.function.*;
-import java.util.regex.*;
-import java.util.stream.*;
-import static java.util.stream.Collectors.joining;
-import static java.util.stream.Collectors.toList;
+import java.util.Scanner;
 
-class Result {
+public class Day9Recursion3 {
+    public static void main(String[] args) throws IOException {
+        System.out.print("Enter a digit then press enter to display the factorial of the digit:\n>>");
+        Scanner s = new Scanner(System.in);
+        int n = Integer.parseInt(s.nextLine().trim());
 
-    public static int factorial(int n) {
+        int result = factorial(n);
+        System.out.println(result);
+
+    }
+
+    private static int factorial(int n) {
         if (n <= 1) return 1;
         else return n * factorial(n - 1);
     }
 
-}
 
-public class Day9Recursion3 {
-    public static void main(String[] args) throws IOException {
-        BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
-        BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(System.getenv("OUTPUT_PATH")));
-
-        int n = Integer.parseInt(bufferedReader.readLine().trim());
-
-        int result = Result.factorial(n);
-
-        bufferedWriter.write(String.valueOf(result));
-        bufferedWriter.newLine();
-
-        bufferedReader.close();
-        bufferedWriter.close();
-    }
 }
