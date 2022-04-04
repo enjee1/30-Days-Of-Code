@@ -1,8 +1,6 @@
 package com.company.day2_operators;
 
-import static java.util.stream.Collectors.joining;
-
-public class Day2Operators {
+public class Result {
 
     /*
      * Complete the 'solve' function below.
@@ -15,14 +13,12 @@ public class Day2Operators {
 
     public static void solve(double meal_cost, int tip_percent, int tax_percent) {
         // Write your code here
-        double totalTip = ((double)tip_percent / 100) * meal_cost;
-        double totalTax = ((double)tax_percent / 100) * meal_cost;
-        System.out.println(Math.round(meal_cost + totalTip + totalTax));
+        double tipTotal = meal_cost * ((double)tip_percent / 100);
+        double taxTotal = meal_cost * ((double)tax_percent / 100);
+        System.out.println(Math.round(meal_cost + tipTotal + taxTotal));
+
     }
+
+
 }
-
-
-
-
-
 

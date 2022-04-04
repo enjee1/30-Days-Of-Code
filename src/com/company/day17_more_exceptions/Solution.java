@@ -2,7 +2,7 @@ package com.company.day17_more_exceptions;
 
 import java.util.Scanner;
 
-class Main {
+public class Solution {
     public static void main(String[] args) {
 
         Scanner in = new Scanner(System.in);
@@ -23,4 +23,3 @@ class Main {
         in.close();
     }
 }
-

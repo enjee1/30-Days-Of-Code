@@ -1,7 +1,9 @@
 package com.company.day0_hello_world;
-import java.util.*;
 
-public class Day0HelloWorld {
+import java.util.Scanner;
+
+public class Solution {
+
     public static void main(String[] args) {
         // Create a Scanner object to read input from stdin.
         Scanner scan = new Scanner(System.in);
@@ -16,7 +18,6 @@ public class Day0HelloWorld {
         // Print a string literal saying "Hello, World." to stdout.
         System.out.println("Hello, World.");
 
-        // TODO: Write a line of code here that prints the contents of inputString to stdout.
         System.out.println(inputString);
     }
 }

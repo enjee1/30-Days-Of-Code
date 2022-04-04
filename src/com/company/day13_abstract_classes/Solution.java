@@ -2,7 +2,7 @@ package com.company.day13_abstract_classes;
 
 import java.util.Scanner;
 
-public class Main {
+public class Solution {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         String title = scanner.nextLine();
@@ -13,5 +13,4 @@ public class Main {
         Book book = new MyBook(title, author, price);
         book.display();
     }
-
 }
