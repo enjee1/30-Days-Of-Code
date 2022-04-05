@@ -18,6 +18,9 @@ public class Solution {
                 .map(Integer::parseInt)
                 .collect(toList());
 
+        for (int i = n - 1; i >= 0; i--) {
+            System.out.print(arr.get(i) + " ");
+        }
         bufferedReader.close();
     }
 }
