@@ -10,6 +10,10 @@ public class Solution {
 
         int n = Integer.parseInt(bufferedReader.readLine().trim());
 
+        for (int i = 1; i < 11 ; i++) {
+            System.out.println(n + " x " + i + " = " + (n * i));
+        }
+
         bufferedReader.close();
     }
 }
